@@ -46,9 +46,19 @@
 
 
     // --------- TypeScript 相关 ---------------
-    // TS 的规则和 ESLint 自身的规则可能有冲突，注意处理（把 ESLint 相同的规则 off）
+    // TS 的一些规则和 ESLint 自身的规则有重复，注意处理（把 ESLint 相同的规则 off）
     // 不能有未使用的变量
-    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-unused-vars": "warn",
+    // class、enum 等使用大驼峰风格
+    "@typescript-eslint/naming-convention": [
+      "warn",
+      {
+        "selector": "typeLike",
+        "format": [
+          "PascalCase"
+        ]
+      }
+    ],
 
 
     // -------- React 相关 --------------
