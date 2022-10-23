@@ -37,12 +37,8 @@
     ]
   },
   "devDependencies": {
-    "@types/enzyme": "^3.10.12",
-    "@types/enzyme-adapter-react-16": "^1.0.6",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6",
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0"
   }
